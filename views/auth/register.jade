@@ -1,0 +1,12 @@
+extends ../layout
+
+block body
+	form(action="/users", method="post")
+		div
+			label Name:
+			input(type="text", name="name")
+		div
+			label Pass:
+			input(type="password", name="pass")
+		div
+			input(type="submit", value="Submit")
